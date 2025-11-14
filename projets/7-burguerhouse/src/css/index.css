@@ -1,0 +1,57 @@
+/* eslint-disable */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto";
+  @apply text-secondary
+    overflow-hidden;
+}
+p {
+  @apply mb-4;
+}
+
+.bouton_transition {
+  @apply transition-colors duration-500 ease-in-out;
+}
+
+/* Button themes */
+
+.big {
+  @apply px-8 py-4 text-base md:text-base;
+}
+
+.small {
+  @apply px-4 py-2 text-xs md:text-base;
+}
+
+.medium {
+  @apply px-4 py-3 text-xs md:text-sm;
+}
+
+/* Button colors */
+
+.primary {
+  @apply bg-primary hover:bg-primary-hover;
+}
+
+.secondary {
+  @apply bg-secondary hover:bg-secondary-hover;
+}
+
+.default {
+  @apply bg-primary hover:bg-primary-hover;
+}
+
+.shadowTitleSecondary {
+  text-shadow: 3px 3px #fee7ba;
+}
+
+.animate {
+  @apply transition-colors duration-300;
+}

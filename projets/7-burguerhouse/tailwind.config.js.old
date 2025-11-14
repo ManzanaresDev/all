@@ -1,0 +1,78 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+  safelist: [
+    'primary', 'secondary', 'default',
+    'big', 'small', 'medium',
+    'bg-primary', 'bg-primary-hover',
+    'bg-secondary', 'bg-secondary-hover',
+    'bg-red-primary',
+    'text-secondary', 'text-red-primary',
+    'bg-primary-hover', 'hover:bg-secondary-hover',
+  ],
+
+  theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
+
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+
+      // 🌈 Couleurs personnalisées
+      primary: '#ffc045',
+      'primary-hover': '#e0a800',
+      secondary: '#3d2514',
+      'secondary-hover': '#6B4420', // plus claire
+      'red-primary': '#bf2222',
+
+      // 🎨 Couleurs par défaut de Tailwind (tu peux les garder)
+      black: '#000',
+      white: '#fff',
+      gray: {
+        50: '#f9fafb',
+        100: '#f3f4f6',
+        200: '#e5e7eb',
+        300: '#d1d5db',
+        400: '#9ca3af',
+        500: '#6b7280',
+        600: '#4b5563',
+        700: '#374151',
+        800: '#1f2937',
+        900: '#111827',
+      },
+    },
+
+    fontFamily: {
+      primary: ['Roboto', 'sans-serif'],
+      secondary: ['Alfa Slab One', 'cursive'],
+    },
+
+    extend: {
+      spacing: {
+        128: '32rem',
+        144: '36rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
+      zIndex: {
+        100: '100',
+      },
+      boxShadow: {
+        'xl': '0 10px 20px rgba(0, 0, 0, 0.25)',
+      },
+    },
+  },
+
+  plugins: [],
+}
